@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+       
+        .container{
+            background-color: blueviolet;
+            height:80vh;
+            width:100%;
+            display:grid;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns:300px 1fr 300px;
+            padding-top:0px;
+           
+        }
+        .items{
+            padding-top:15px;
+            text-align:center;
+        }
+        .item{
+           grid-column-start:1;
+           grid-column-end:4;
+           text-align:center;
+           padding-top:15px;
+          
+
+        }
+        .one{
+            background-color:orangered;
+           
+        }
+        .two{
+           background-color: yellow;
+           text-align: center;
+        }
+        .three{
+            background-color:rgb(31, 148, 187);
+            padding-left:15px;
+            padding-top:15px;
+        }
+        .four{
+            background-color: deeppink;
+           text-align: center;
+        }
+        .five{
+            background-color: rgb(63, 189, 63);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class= " item one">Header</div>
+        <div class= "items two">ASide1</div>
+        <div class= " three">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, repellendus! Dolore quidem ea rem accusamus reiciendis veniam dolorem ipsa laborum deleniti eos. Dicta, veritatis minima a deserunt nulla eveniet dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora autem iusto deleniti excepturi, beatae nostrum reprehenderit. Tempora dolores aliquid velit molestias, voluptatum Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum itaque officiis? Molestias beatae ipsa nobis ut iure, dolorem cupiditate quidem adipisci vitae. Incidunt officiis placeat assumenda saepe amet eos Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam consequuntur dolor debitis ab, laboriosam beatae vitae veritatis quisquam quo excepturi, voluptatem dolores commodi quidem perspiciatis est temporibus magni maxime nobis?
+
+        </div>
+        <div class= "items four">Aside2</div>
+        <div class= " item five">Footer</div>
+       
+     
+
+    </div>
+</body>
+</html>
